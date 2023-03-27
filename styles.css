@@ -37,7 +37,7 @@ aside{
     height: 100%;
     width: 150px;
     border-radius: 10px;
-    background: var(--sidebar-color);
+    background: white;
     transition: var(--tran-05);
     z-index: 100;
     display: flex;
@@ -111,7 +111,7 @@ aside{
 
 
 .expense-container {
-    display: flex;
+    display: block;
     width: 100%;
 
     flex-direction: row;
@@ -136,29 +136,34 @@ aside{
 
 
 .expense__item {
-    margin: 4px;
-    padding: 20px;
+    margin: 7px;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     border: solid 1px white ;
     border-radius: 10px;
-    background-color: #695CFE;
-    color: white;
+    background-color: #ffffff;
+    color: #695CFE;
     flex-shrink: 0;
 }
 .expense__item .name {
     padding: 5px;
     margin: 5px;
-    background-color: #232323;
+
     font-weight: bold;
     border-radius: 5px;
-    color: white;
+    color: #545454;
+    font-size: 18px;
 }
 .expense__item .price {
     letter-spacing: 7px;
-    padding-bottom: 5px;
+    padding: 10px;
 }
 .expense__item .category {
     font-weight: 600;
+    padding: 10px;
 
 }
 .expense__item .date {
