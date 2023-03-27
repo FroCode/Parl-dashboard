@@ -309,6 +309,19 @@ body.dark .home .text{
 }
 
 
-.text-sw {
+.text-sw-d {
     color: var(--text-sw);
+}
+
+.text-sw-l {
+    color: var(--primary-color);
+}
+.input-date {
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    width: 20%;
+    border-radius: 5px;
+    font-weight: 900;
+    color: var(--primary-color);
 }

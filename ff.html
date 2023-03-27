@@ -110,11 +110,11 @@
   <div class="text">
     <section class="body">
       <section class="expenses_box">
-        <h1 class="text-sw">Expenses</h1>
+        <h1 class="main-text">Expenses</h1>
         <form>
           <label><span>Period</span><span class="range">
-              <input type="date"><span>-</span>
-              <input type="date"></span></label>
+              <input class="input-date" type="date"><span>-</span>
+              <input class="input-date" type="date"></span></label>
           <label><span>Category</span>
             <select>
               <option value="food">food</option>
@@ -227,8 +227,8 @@
           toggle = body.querySelector(".toggle"),
           searchBtn = body.querySelector(".search-box"),
           modeSwitch = body.querySelector(".toggle-switch"),
-          modeText = body.querySelector(".mode-text");
-          swText = body.querySelector(".text-sw");
+          modeText = body.querySelector(".mode-text"),
+          mainText = body.querySelector(".main-text");
 
 
   toggle.addEventListener("click" , () =>{
@@ -244,8 +244,12 @@
 
     if(body.classList.contains("dark")){
       modeText.innerText = "Light mode";
+      mainText.classList.add("text-sw-l")
+
     }else{
       modeText.innerText = "Dark mode";
+      mainText.classList.remove = "text-sw-l";
+      mainText.classList.add("text-sw-l")
 
     }
   });
