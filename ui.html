@@ -52,55 +52,55 @@
         <div class="expense-container">
             <div class="expense__item">
               <div class="name">coffee</div>
-              <div class="price"><span class="price__amount">40</span><span class="price__currency">PLN</span></div>
+              <div class="price"><span class="red price__amount">40</span><span class="price__currency">PLN</span></div>
               <div class="category">food</div>
               <div class="date">2022-07-16</div>
             </div>
             <div class="expense__item">
               <div class="name">bread</div>
-              <div class="price"><span class="price__amount">8</span><span class="price__currency">PLN</span></div>
+              <div class="price"><span class="red price__amount">8</span><span class="price__currency">PLN</span></div>
               <div class="category">food</div>
               <div class="date">2022-08-03</div>
             </div>
             <div class="expense__item">
               <div class="name">cheese</div>
-              <div class="price"><span class="price__amount">21</span><span class="price__currency">PLN</span></div>
+              <div class="price"><span class="red price__amount">21</span><span class="price__currency">PLN</span></div>
               <div class="category">food</div>
               <div class="date">2022-08-03</div>
             </div>
             <div class="expense__item">
               <div class="name">fuel</div>
-              <div class="price"><span class="price__amount">320</span><span class="price__currency">PLN</span></div>
+              <div class="price"><span class="red price__amount">320</span><span class="price__currency">PLN</span></div>
               <div class="category">car</div>
               <div class="date">2022-08-14</div>
             </div>
             <div class="expense__item">
               <div class="name">bread</div>
-              <div class="price"><span class="price__amount">8</span><span class="price__currency">PLN</span></div>
+              <div class="price"><span class="red price__amount">8</span><span class="price__currency">PLN</span></div>
               <div class="category">food</div>
               <div class="date">2022-09-01</div>
             </div>
             <div class="expense__item">
               <div class="name">ham</div>
-              <div class="price"><span class="price__amount">14</span><span class="price__currency">PLN</span></div>
-              <div class="category">food</div>
+              <div class="price"><span class="red price__amount">14</span><span class="price__currency">PLN</span></div>
+              <div class="category">>food</div>
               <div class="date">2022-09-01</div>
             </div>
             <div class="expense__item">
               <div class="name">butter</div>
-              <div class="price"><span class="price__amount">6</span><span class="price__currency">PLN</span></div>
+              <div class="price"><span class="red price__amount">6</span><span class="price__currency">PLN</span></div>
               <div class="category">food</div>
               <div class="date">2022-09-10</div>
             </div>
             <div class="expense__item">
               <div class="name">fuel</div>
-              <div class="price"><span class="price__amount">320</span><span class="price__currency">PLN</span></div>
+              <div class="price"><span class="red price__amount">320</span><span class="price__currency">PLN</span></div>
               <div class="category">car</div>
               <div class="date">2022-09-10</div>
             </div>
             <div class="expense__item">
               <div class="name">car wash</div>
-              <div class="price"><span class="price__amount">60</span><span class="price__currency">PLN</span></div>
+              <div class="price"><span class="red price__amount">60</span><span class="price__currency">PLN</span></div>
               <div class="category">car</div>
               <div class="date">2022-09-10</div>
             </div>
@@ -115,33 +115,40 @@
         </div>
         <section class="summary_box_period">
           <h3>Per period</h3>
+          <div class="expense-container">
           <div class="sum_period__item">
+            <div class="amount"><span class="red">-40</span></div>
+            <div class="currency">PLN</div>
             <div class="date">2022-07</div>
-            <div class="amount">40</div>
-            <div class="currency">PLN</div>
           </div>
           <div class="sum_period__item">
+
+            <div class="amount"><span class="red">-349</span></div>
+            <div class="currency">PLN</div>
             <div class="date">2022-08</div>
-            <div class="amount">349</div>
-            <div class="currency">PLN</div>
           </div>
           <div class="sum_period__item">
-            <div class="date">2022-09</div>
-            <div class="amount">408</div>
+            <div class="amount"> <span class="red">-408</span></div>
             <div class="currency">PLN</div>
+            <div class="date">2022-09</div>
+          </div>
           </div>
         </section>
         <section class="summary_box_category">
           <h3>Per category</h3>
-          <div class="sum_category__item">
-            <div class="date">food</div>
-            <div class="amount">97</div>
-            <div class="currency">PLN</div>
-          </div>
-          <div class="sum_category__item">
-            <div class="date">car</div>
-            <div class="amount">700</div>
-            <div class="currency">PLN</div>
+          <div class="expense-container">
+            <div class="expense__item">
+              <div class="name">food</div>
+              <div class="price"><span class="red price__amount">97</span><span class="price__currency">PLN</span></div>
+
+              <div class="date">2022-09-10</div>
+            </div>
+            <div class="expense__item">
+              <div class="name">food</div>
+              <div class="price"><span class="red price__amount">700</span><span class="price__currency">PLN</span></div>
+
+              <div class="date">2022-09-10</div>
+            </div>
           </div>
         </section>
       </section>
