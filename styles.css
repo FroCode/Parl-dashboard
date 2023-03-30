@@ -50,7 +50,7 @@ aside{
 }
 
 
-.nav li{
+.nav li {
     height: 50px;
     list-style: none;
     display: flex;
@@ -102,8 +102,11 @@ aside{
 }
 /* ===== Expenses Section ===== */
 
-.expenses_box h1 {
+.expenses_box h1  {
    font-size: 35px;
+    border-bottom: 5px #695CFE solid;
+    margin-bottom: 20px;
+    width: 200px;
 }
 
 
@@ -113,10 +116,11 @@ aside{
 .expense-container {
     display: block;
     width: 100%;
-
+    margin: auto;
+    background-color: white;
     flex-direction: row;
     flex-wrap: wrap;
-
+    border-radius: 10px;
 
 }
 
@@ -136,40 +140,51 @@ aside{
 
 
 .expense__item {
-    margin: 7px;
-    padding: 0;
-    flex-grow: 1;
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    border: solid 1px white ;
-    border-radius: 10px;
-    background-color: #ffffff;
+    border-bottom: solid 1px #dcdcdc;
+    margin-bottom: 10px;
     color: #695CFE;
-    flex-shrink: 0;
+
 }
+
 .expense__item .name {
     padding: 5px;
     margin: 5px;
-
+    width: 80%;
+    background-color: #ffffff;
     font-weight: bold;
     border-radius: 5px;
     color: #545454;
+
     font-size: 18px;
 }
 .expense__item .price {
-    letter-spacing: 7px;
-    padding: 10px;
+    font-weight: 600;
+    padding: 12px;
+    width: 50%;
+    color: #545454;
+
+
+}
+.price__amount {
+  letter-spacing: 5px;
+
 }
 .expense__item .category {
     font-weight: 600;
-    padding: 10px;
+    padding: 12px;
+    width: 20%;
+    color: #545454;
 
 }
 .expense__item .date {
-    color: #ffffff;
+    color: green;
     font-size: 14px;
-    padding: 10px;
+    padding: 14px;
+    float: right;
+    width: 70%;
+    text-align: right;
+
 }
 
 .expenses_box {
@@ -197,5 +212,25 @@ label input , label select , label select option {
 .summary_box h2 {
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 20px;
+}
+.summary_box .summary-container {
+    display: flex;
+    background-color: #242526;
+    border-radius: 10px;
+    border: solid 1px #dcdcdc;
+    padding: 10px;
+    color: white;
+}
+.summary_box h3 {
+    margin-left: auto;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.summary_box_period h3 {
     font-size: 35px;
+    border-bottom: 5px #695CFE solid;
+    margin-bottom: 20px;
+    width: 200px;
 }
